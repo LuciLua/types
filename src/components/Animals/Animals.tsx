@@ -5,8 +5,8 @@ type AnimalProps = {
     animalsList: Animal[]
 }
 
-function Animals({ animalsList }: AnimalProps) {
-// function Animals({ animalsList }) {
+// function Animals({ animalsList }: AnimalProps) {
+function Animals({ animalsList }) {
     return (
         animalsList.map(animal => {
             return (
