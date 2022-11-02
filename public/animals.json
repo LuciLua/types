@@ -1,0 +1,70 @@
+[
+    {
+        "id": 0,
+        "name": "pig",
+        "emoji": "🐷",
+        "types": [
+            {
+                "type": {
+                    "name": "beautiful"
+                }
+            },
+            {
+                "type": {
+                    "name": "happy"
+                }
+            },
+            {
+                "type": {
+                    "name": "tired"
+                }
+            }
+        ],
+        "skills": [
+            {
+                "skill": {
+                    "name": "fire",
+                    "power": 15
+                }
+            },
+            {
+                "skill": {
+                    "name": "water",
+                    "power": 46
+                }
+            }
+        ],
+        "description": "Helo, I'm a pig, Today is a good day and I feel so happy"
+    },
+    {
+        "id": 1,
+        "name": "bug",
+        "emoji": "🐜",
+        "types": [
+            {
+                "type": {
+                    "name": "horrible"
+                }
+            },
+            {
+                "type": {
+                    "name": "ugly"
+                }
+            },
+            {
+                "type": {
+                    "name": "bad"
+                }
+            }
+        ],
+        "skills": [
+            {
+                "skill": {
+                    "name": "pick",
+                    "power": 99
+                }
+            }
+        ],
+        "description": "Hi motherfuckers!"
+    }
+]

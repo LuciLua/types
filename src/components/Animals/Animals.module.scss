@@ -1,0 +1,60 @@
+.animal_container {
+    background-color: rgb(35, 35, 35);
+    color: #fbfcff;
+    padding: 20px;
+    border-radius: 10px;
+
+    font-family: 'Courier New', Courier, monospace;
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+
+    max-width: 300px;
+
+    margin: 10px;
+    transition: 0.3s;
+
+    &:hover{
+        box-shadow: 3px 3px 12px #000;
+        transition: 0.3s;
+        cursor: pointer;
+    }
+
+    .about {
+        margin: 10px 0;
+
+        p {
+            color: #c9c9c9;
+        }
+    }
+
+    .name {
+        font-size: 20px;
+
+        span {
+            color: #fff3;
+            margin-right: 10px;
+        }
+    }
+
+
+    .types {
+        display: flex;
+        width: 100%;
+        margin: 10px 0;
+
+        .type {
+            background-color: #2a75ff;
+            border-radius: 10px;
+            padding: 6px 10px;
+            width: fit-content;
+            margin: 2px;
+            font-size: 12px;
+
+            p {
+                color: #fff;
+            }
+        }
+    }
+}
