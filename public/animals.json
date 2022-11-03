@@ -48,6 +48,11 @@
             },
             {
                 "type": {
+                    "name": "angry"
+                }
+            },
+            {
+                "type": {
                     "name": "ugly"
                 }
             },
@@ -66,5 +71,57 @@
             }
         ],
         "description": "Hi motherfuckers!"
+    },
+    {
+        "id": 2,
+        "name": "dragon",
+        "emoji": "🐉",
+        "types": [
+            {
+                "type": {
+                    "name": "angry"
+                }
+            },
+            {
+                "type": {
+                    "name": "hot"
+                }
+            }
+        ],
+        "skills": [
+            {
+                "skill": {
+                    "name": "fire",
+                    "power": 74
+                }
+            }
+        ],
+        "description": "house of dragons, here is where I live "
+    },
+    {
+        "id": 3,
+        "name": "butterfly",
+        "emoji": "🦋",
+        "types": [
+            {
+                "type": {
+                    "name": "bad"
+                }
+            },
+            {
+                "type": {
+                    "name": "happy"
+                }
+            }
+        ],
+        "skills": [
+            {
+                "skill": {
+                    "name": "fly",
+                    "power": 82
+                }
+            }
+        ],
+        "description": "I can fly"
     }
 ]

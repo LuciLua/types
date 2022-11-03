@@ -1,14 +1,15 @@
 import styles from "./Animals.module.scss"
 import { Animal } from "../../types/Animal"
+import { animalsSkillsTypes } from "../../animalsSkillsTypes";
 
 type AnimalProps = {
     animalsList: Animal[]
 }
 
-function Animals(props: AnimalProps): any {
-    // function Animals({ animalsList }) {
+function Animals({ animalsList }: AnimalProps): any {
     return (
-        props.animalsList.map(animal => {
+        /* mapping: animals */ 
+        animalsList.map(animal => {
             return (
                 <div className={styles.animal_container} key={animal.id}>
                     <h1 className={styles.name}>
@@ -19,9 +20,14 @@ function Animals(props: AnimalProps): any {
                         {animal.emoji}
                     </h1>
                     <div className={styles.types}>
+                        {/* mapping: types */}
                         {animal.types.map(types => {
+                            // mapping colors by type
+                            const [{ color }] = animalsSkillsTypes.filter(
+                                (typeSkills) => types.type.name.indexOf(typeSkills.name) !== -1
+                            );
                             return (
-                                <p key={types.type.name} className={styles.type}>{types.type.name}</p>
+                                <p style={{ "background": `${color}` }} key={types.type.name} className={styles.type}>{types.type.name}</p>
                             )
                         })}
                     </div>

@@ -3,8 +3,40 @@
     color: #fff;
 
     display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
     min-height: 100vh;
+
+    justify-content: center;
+
+    .animals {
+        display: flex;
+        justify-content: center;
+
+        align-content: center;
+        flex-wrap: wrap;
+
+        gap: 20px;
+
+        padding: 20px;
+
+        margin-bottom: auto;
+
+    }
+
+    .title {
+        margin-bottom: auto;
+        background-color: rgba(30, 39, 94, 0.181);
+        width: 100%;
+        padding: 20px;
+
+        &>h1 {
+            font-family: 'Courier New', Courier, monospace;
+            color: rgb(36, 36, 36);
+
+            &::selection {
+                background-color: rgba(255, 208, 0, 0.945);
+                color: rgb(0, 0, 0);
+            }
+        }
+    }
 }

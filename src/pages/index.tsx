@@ -6,23 +6,27 @@ import { Animal } from "../types/Animal"
 function Home() {
         const [animals, setAnimals] = useState([])
 
-        function fetchAnimals(){
+        function fetchAnimals() {
                 fetch('./animals.json')
-                .then(resp => resp.json())
-                .then(resp => {
-                        setAnimals(resp)
-                })
-                .catch(err => console.log(err))
+                        .then(resp => resp.json())
+                        .then(resp => {
+                                setAnimals(resp)
+                        })
+                        .catch(err => console.log(err))
         }
-        
-        useEffect( () => {
+
+        useEffect(() => {
                 fetchAnimals()
         }, [])
 
         return (
                 <div className={styles.container}>
-                        <h1>Hello, World!</h1>
-                        <Animals animalsList={animals}/>
+                        <div className={styles.title}>
+                                <h1>Animals</h1>
+                        </div>
+                        <div className={styles.animals}>
+                                <Animals animalsList={animals} />
+                        </div>
                 </div>
         )
 }
