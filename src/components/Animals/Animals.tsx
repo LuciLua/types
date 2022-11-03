@@ -5,10 +5,10 @@ type AnimalProps = {
     animalsList: Animal[]
 }
 
-// function Animals({ animalsList }: AnimalProps) {
-function Animals({ animalsList }) {
+function Animals(props: AnimalProps): any {
+    // function Animals({ animalsList }) {
     return (
-        animalsList.map(animal => {
+        props.animalsList.map(animal => {
             return (
                 <div className={styles.animal_container} key={animal.id}>
                     <h1 className={styles.name}>
