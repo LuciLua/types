@@ -11,7 +11,7 @@ function Animals({ animalsList }: AnimalProps): any {
         /* mapping: animals */ 
         animalsList.map(animal => {
             return (
-                <div className={styles.animal_container} key={animal.id}>
+                <div className={styles.animal_container} key={animal.id} draggable={true}>
                     <h1 className={styles.name}>
                         <span>
                             #{animal.id}

@@ -15,6 +15,10 @@
 
     transition: 0.3s;
 
+    &:-moz-drag-over, &::dr{
+        background-color: #000;
+        opacity: 100%;
+    }
 
     &:hover{
         box-shadow: 3px 3px 12px rgba(0, 0, 0, 0.582);
